@@ -41,7 +41,7 @@ header h1 {
     margin: 10px;
 }
 
-.container {
+.main-container {
     display: flex;
     flex-flow: row wrap;
 }
@@ -54,7 +54,7 @@ header h1 {
 .about-me {
     order: 1;
     background-color: var(--steel);
-    color: var(--cream);
+    color: var(--egg);
     width: 30%;
     display: flex;
     flex-flow: column wrap;
@@ -66,6 +66,7 @@ header h1 {
     border: 2px solid var(--blackish);
     border-radius: 40%;
     align-self: center;
+    margin-top: 5px;
 }
 
 .contact-info {
@@ -73,11 +74,25 @@ header h1 {
     color: var(--cream);
     height: 90px;
     text-align: center;
-    padding: 20px;
+    display: flex;
+    flex-flow: row nowrap;
 }
-.contact-info h2, .contact-info p {
+
+.contact-info h2 {
+    text-decoration: underline;
+}
+
+.contact-info div {
+    width: 33%;
+    align-self: center;
+    padding: 6px;
+}
+
+.info-box {
     background-color: var(--blackish);
-    /* width: 50%; */
+    border: 2px solid var(--cream);
+    overflow-wrap: break-word;
+    ;
 }
 
 /* 
