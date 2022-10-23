@@ -7,30 +7,37 @@
     --egg: #f4fff8;
 }
 
-h1 {
-    font-size: 2rem}
-
-header {
+h1 { font-size: 1.5rem }
+/*=====================================================*/
+.top-bar {
     background-color: var(--darkred);
     color: var(--cream);
     height: 130px;
-    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+/*=====================================================*/
+.top-bar .title {
     display: flex;
     flex-flow: row nowrap;
 }
-header h1 {
-    padding: 10px;
+.top-bar .icon {
+    width:80px;
     margin: 10px;
-    /* border: 1px solid white; */
+    border: 1px solid var(--blackish);
+}
+.top-bar .title h1 {
+    padding: 10px;
+    margin: 10px;;
     flex: 1 1 auto;
 }
 
+/*=====================================================*/
 .nav-bar {
     display: flex;
-    flex-flow: row wrap;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    flex-flow: row nowrap;
     width: 100%;
 }
 .nav-bar a {
@@ -39,37 +46,74 @@ header h1 {
     text-align: center;
     background-color: var(--blackish);
     margin: 10px;
-}
+} 
 
-.main-container {
+/*=====================================================*/
+.middle-bar {
     display: flex;
     flex-flow: row wrap;
 }
 .showcase{
     order: 2;
-    background-color: var(--egg);
-    color: var(--blackish);
-    width: 70%;
+    background-color: var(--blackish);
+    color: var(--cream);
+    width: 80%;
+    display: flex;
+    flex-flow: column nowrap;
 }
+.showcase section {
+    display: flex;
+    flex-flow: row nowrap;
+}
+.showcase section div {
+    width: 30%;
+    text-align: center;
+}
+.main-proj-img{
+    width: 200px;
+}
+
+/*=====================================================*/
+.proj-img {
+    width: 100px;
+}
+.proj-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+.proj-card {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/*=====================================================*/
 .about-me {
     order: 1;
     background-color: var(--steel);
     color: var(--egg);
-    width: 30%;
+    width: 20%;
     display: flex;
     flex-flow: column wrap;
     text-align: center;
+    font-size: 0.5rem;
+    padding: 15px;
 }
-.selfie {
+.about-me h2{
+    font-size: 1rem;
+}
+.about-me .selfie {
     flex: 1 1 100px;
     width: 100px;
     border: 2px solid var(--blackish);
     border-radius: 40%;
     align-self: center;
-    margin-top: 5px;
+    margin: 5px;
 }
 
-.contact-info {
+/*=====================================================*/
+.bottom-bar {
     background-color: var(--darkred);
     color: var(--cream);
     height: 90px;
@@ -77,23 +121,22 @@ header h1 {
     display: flex;
     flex-flow: row nowrap;
 }
-
-.contact-info h2 {
+.bottom-bar h2 {
     text-decoration: underline;
 }
-
-.contact-info div {
+.bottom-bar div {
     width: 33%;
     align-self: center;
     padding: 6px;
 }
-
 .info-box {
     background-color: var(--blackish);
     border: 2px solid var(--cream);
     overflow-wrap: break-word;
-    ;
 }
+
+/*=====================================================*/
+
 
 /* 
 @media screen and (max-width: 992px) {}
@@ -101,6 +144,7 @@ header h1 {
 @media screen and (max-width: 768px){
 .nav-bar {
     flex-direction: column;
+    bottom-spacer -> display none?
 }
 } */
 
