@@ -1,0 +1,53 @@
+/* color scheme sourced from https://coolors.co/generate */
+:root {
+    --blackish: #031926;
+    --darkred: #4c061d;
+    --steel: #558c8c;
+    --cream: #f5f7dc;
+    --egg: #f4fff8;
+  }
+
+  /* body {
+    display: flex;
+    flex-flow: column wrap;
+  } */
+h1 {font-size: 2.5rem}
+
+header {
+    padding: 15px;
+    background-color: var(--darkred);
+    color: var(--cream);
+    height: 200px;
+    position: relative;
+  }
+
+header h1 {
+    padding: 10px;
+    border: 1px solid white;
+  }
+
+.nav-bar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    /* border: 1px solid white; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+.nav-bar a {
+    border: 1px solid var(--egg);
+    flex: 1 1 auto;
+    text-align: center;
+    background-color: var(--blackish);
+    margin: 10px;
+  }
+
+@media screen and (max-width: 768px){
+    header nav ul {
+        flex-direction: column;
+    }
+}
+
