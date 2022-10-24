@@ -144,7 +144,7 @@ p  { font-size: 16px; }
 .bottom-bar h2 {
     text-decoration: underline;
 }
-.bottom-bar div {
+.bottom-bar .spacer, .bottom-bar .info-box {
     width: 33%;
     align-self: center;
     padding: 6px;
@@ -153,6 +153,7 @@ p  { font-size: 16px; }
     background-color: var(--blackish);
     border: 2px solid var(--cream);
     overflow-wrap: break-word;
+    line-height: 23px;
 }
 
 /*==========*/
@@ -167,9 +168,7 @@ p  { font-size: 16px; }
 }
 
 @media screen and (max-width: 768px){
-.nav-bar {
-    flex-direction: column;
-    
+    .nav-bar { flex-direction: column; }
+    .bottom-bar .spacer { display: none; }
+    .bottom-bar .info-box { width: 100%; }
 }
-}
-
