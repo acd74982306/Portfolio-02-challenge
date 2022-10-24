@@ -52,7 +52,7 @@ p  { font-size: 16px; }
     margin: 10px;
     text-decoration: none;
 } 
-.nav-bar a:visited, .nav-bar a:hover, .nav-bar a:active {
+.nav-bar a:visited, .nav-bar a:hover, .nav-bar a:active, .navbar a:link {
     color: inherit;
 }
 
