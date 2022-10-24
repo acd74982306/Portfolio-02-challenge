@@ -5,6 +5,13 @@ Beginner Bootcamp Portfolio
 Webpage portfolio initially populated with previous homework projects as examples of coding ability. Will serve as a template or base for future portfolio when more examples are created / more code knowledge is able to be showcased. Currently displays one main project and two additional projects of smaller size. 
 <br>
 
+### Criteria
+* Contains the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
+* The UI scrolls to the corresponding section when navigation links are clicked
+* A larger display for the author's primary work showcase
+* Application images that when clicked navigate the user to displayed application
+* A responsive layout that adapts to viewports of varying sizes
+
 ### Webpage
 ![page-screenshot](https://user-images.githubusercontent.com/114900371/197647885-8795a756-bbc6-4301-8e44-bec4d011ed90.png)
 <br>
