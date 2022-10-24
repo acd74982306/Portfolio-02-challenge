@@ -84,7 +84,7 @@ p  { font-size: 16px; }
     flex-flow: column nowrap;
 }
 .proj-card h3 {
-    border: 2px solid var(--cream);
+    border: 1px solid var(--cream);
     background-color: var(--blackish);
 }
 
@@ -157,7 +157,7 @@ p  { font-size: 16px; }
 }
 .info-box {
     background-color: var(--blackish);
-    border: 2px solid var(--cream);
+    border: 1px solid var(--cream);
     overflow-wrap: break-word;
     line-height: 23px;
 }
