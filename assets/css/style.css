@@ -7,8 +7,11 @@
     --egg: #f4fff8;
 }
 
-h1 { font-size: 1.5rem }
-/*=====================================================*/
+h1 { font-size: 30px; }
+h2 { font-size: 25px; }
+h3 { font-size: 20px; }
+p  { font-size: 16px; }
+/*==========*/
 .top-bar {
     background-color: var(--darkred);
     color: var(--cream);
@@ -18,7 +21,7 @@ h1 { font-size: 1.5rem }
     justify-content: center;
 }
 
-/*=====================================================*/
+/*-----------*/
 .top-bar .title {
     display: flex;
     flex-flow: row nowrap;
@@ -26,7 +29,7 @@ h1 { font-size: 1.5rem }
 .top-bar .icon {
     width:80px;
     margin: 10px;
-    border: 1px solid var(--blackish);
+    border: 2px solid var(--blackish);
 }
 .top-bar .title h1 {
     padding: 10px;
@@ -34,7 +37,7 @@ h1 { font-size: 1.5rem }
     flex: 1 1 auto;
 }
 
-/*=====================================================*/
+/*-----------*/
 .nav-bar {
     display: flex;
     flex-flow: row nowrap;
@@ -48,11 +51,13 @@ h1 { font-size: 1.5rem }
     margin: 10px;
 } 
 
-/*=====================================================*/
+/*==========*/
 .middle-bar {
     display: flex;
     flex-flow: row wrap;
 }
+
+/*-----------*/
 .showcase{
     order: 2;
     background-color: var(--blackish);
@@ -60,35 +65,49 @@ h1 { font-size: 1.5rem }
     width: 80%;
     display: flex;
     flex-flow: column nowrap;
+    padding: 15px;
 }
-.showcase section {
-    display: flex;
-    flex-flow: row nowrap;
-}
-.showcase section div {
-    width: 30%;
+.showcase h2 {
+    background-color: var(--steel);
+    border: 1px solid var(--cream);
     text-align: center;
 }
-.main-proj-img{
-    width: 200px;
+
+/*-----------*/
+.proj-card {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.proj-card h3 {
+    border: 2px solid var(--cream);
 }
 
-/*=====================================================*/
-.proj-img {
-    width: 100px;
+/*-----------*/
+
+.big-proj {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    text-align: center;
 }
+.big-proj .proj-card .main-proj-img{
+    margin-top: 20px;
+    width: 500px;
+}
+
+/*-----------*/
 .proj-row {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     text-align: center;
 }
-.proj-card {
-    display: flex;
-    flex-flow: column nowrap;
+.proj-row .proj-card .proj-img {
+    margin-top: 20px;
+    width: 350px;
 }
 
-/*=====================================================*/
+/*==========*/
 .about-me {
     order: 1;
     background-color: var(--steel);
@@ -97,22 +116,23 @@ h1 { font-size: 1.5rem }
     display: flex;
     flex-flow: column wrap;
     text-align: center;
-    font-size: 0.5rem;
     padding: 15px;
-}
-.about-me h2{
-    font-size: 1rem;
+    justify-content: center;
+    border: 10px solid var(--blackish);
 }
 .about-me .selfie {
-    flex: 1 1 100px;
-    width: 100px;
+    flex: 0 0 150px;
+    width: 150px;
     border: 2px solid var(--blackish);
     border-radius: 40%;
     align-self: center;
-    margin: 5px;
+    margin: 10px;
+}
+.about-me .am-text {
+    padding: 15px;
 }
 
-/*=====================================================*/
+/*==========*/
 .bottom-bar {
     background-color: var(--darkred);
     color: var(--cream);
@@ -135,16 +155,21 @@ h1 { font-size: 1.5rem }
     overflow-wrap: break-word;
 }
 
-/*=====================================================*/
-
-
-/* 
-@media screen and (max-width: 992px) {}
+/*==========*/
+@media screen and (max-width: 992px) {
+    .middle-bar { flex-direction: column; }
+    .about-me { 
+        flex-flow: row nowrap; 
+        width: 100%;
+        align-items: center;
+    }
+    .showcase { width: 100%; }
+}
 
 @media screen and (max-width: 768px){
 .nav-bar {
     flex-direction: column;
-    bottom-spacer -> display none?
+    
 }
-} */
+}
 
