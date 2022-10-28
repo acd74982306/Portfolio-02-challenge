@@ -15,7 +15,7 @@ Webpage portfolio initially populated with previous homework projects as example
 ### Webpage
 ![page-screenshot](https://user-images.githubusercontent.com/114900371/197647885-8795a756-bbc6-4301-8e44-bec4d011ed90.png)
 <br>
-URL: [Portfolio github page](https://acd74982306.github.io/Portfolio-02-challenge)
+URL: [Portfolio github page](https://acd74982306.github.io/Portfolio-ACD-BC)
 GitHub: [Portfolio github repo](https://github.com/acd74982306/Portfolio-02-challenge)
 
 ## Author
